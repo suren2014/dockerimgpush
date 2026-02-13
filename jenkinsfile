@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('CODE') {
       steps {
-        git url:"", branch:"main"
+        git url:"https://github.com/suren2014/dockerimgpush.git", branch:"main"
             }
          }
     stage('BUILD') {
