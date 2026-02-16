@@ -7,7 +7,7 @@ pipeline {
         IMAGE_NAME = "suren2014/myimg"
         IMAGE_TAG = "${BUILD_NUMBER}"
         CONTAINER_NAME = "webapp"
-        DOCKER_CREDS = credentials('dockerhub-creds')
+        DOCKER_CREDS = credentials('dockerhub-cred')
     }
 
     stages {
