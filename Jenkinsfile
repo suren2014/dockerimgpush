@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "myimg"
+        IMAGE_NAME = "suren2014/myimg"
         IMAGE_TAG = "${BUILD_NUMBER}"
         CONTAINER_NAME = "webapp"
         DOCKER_CREDS = credentials('dockerhub-creds')
