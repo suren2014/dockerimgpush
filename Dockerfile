@@ -5,7 +5,7 @@
 	# Set working directory
 	WORKDIR /net
 
-  RUN pip install flask
+    RUN pip install flask
 
 	# Copy Python file
 	COPY sample.py .
