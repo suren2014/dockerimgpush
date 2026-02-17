@@ -44,6 +44,7 @@ pipeline {
                 sh "docker run -d --name ${CONTAINER_NAME} -p 80:5000 ${IMAGE_NAME}:${IMAGE_TAG}"
             }
         }
+    }
         post {
             success {
                 archiveArtifacts artifacts: '*.tar', followSymlinks: false
@@ -53,4 +54,4 @@ pipeline {
             }
         }
     }
-}
+
