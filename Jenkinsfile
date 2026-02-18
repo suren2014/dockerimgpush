@@ -51,7 +51,7 @@ pipeline {
     }
         post {
             success {
-                archiveArtifacts artifacts: '*.tar', followSymlinks: false
+                archiveArtifacts artifacts: 'test.txt', followSymlinks: false
             }
             failure {
                 echo "Deployment is failed, please check logs"
